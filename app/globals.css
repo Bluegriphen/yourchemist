@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  
+  --color-primary: #70b916;
+  --color-main: #003947;       
+  --color-secondary: #4a5c6d;  
+  --color-dark: #282828;
+  --color-gray: #727272;
+  --color-light-gray: #dfdfdf;
+  --color-bg-soft: #f4f4f4;    
+  --color-tertiary: #faae43;   
+  --color-accent: #73cce0;    
+  --color-blue: #204f81;       
+  --color-danger: #c50000;     
+  --color-star: #ffcb45;
+  --color-border: #e8e8e8;    
+
+
+  --font-heading: "agenda-one", "agenda", sans-serif;
+  --font-body: "acumin-variable", sans-serif;
+
+  /* Font sizes with line heights */
+  --text-h1: 90px;
+  --text-h1--line-height: 103px;
+  --text-h2: 40px;
+  --text-h2--line-height: 46px;
+  --text-h3: 32px;
+  --text-h3--line-height: 37px;
+  --text-card: 24px;
+  --text-card--line-height: 28px;
+  --text-lead: 18px;
+  --text-lead--line-height: 22px;
+
+  /* Radius and shadow */
+  --radius-card: 20px;
+  --shadow-card: 0 4px 6px rgba(65, 65, 65, 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    font-family: var(--font-acumin, system-ui), sans-serif;
+    color: var(--color-dark);
+    background: #fff;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-main);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility container-page {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (min-width: 1024px) {
+    padding-inline: 60px;
+  }
+}
+
+/* @theme {
+  --font-agenda: "agenda", sans-serif;
+} */
+
+ @theme {
+  --font-agenda: "agenda-one", sans-serif;
+  --font-agenda-condensed: "agenda-one-condensed", sans-serif;
+   --font-acumin: "acumin-pro", sans-serif;
 }
