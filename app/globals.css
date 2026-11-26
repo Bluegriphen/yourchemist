@@ -16,10 +16,12 @@
   --color-star: #ffcb45;
   --color-border: #e8e8e8;   
   --color-concrete :#f2f2f2;
+  --color-white:#ffffff;
+  --color-pastel-ocean:#73CCDD;
 
 
-  --font-heading: "acumin-variable";
-  --font-body: "agenda-one", "agenda", sans-serif;
+  --font-acumin:var(--font-plus-jakarta);
+  --font-agenda: var(--font-sk-modernist);
 
   /* Font sizes with line heights */
   --text-h1: 90px;
@@ -40,12 +42,12 @@
 
 @layer base {
   body {
-    font-family: var(--font-acumin, system-ui), sans-serif;
+    font-family: var(--font-agenda, system-ui), sans-serif;
     color: var(--color-dark);
     background: #fff;
   }
   h1, h2, h3, h4 {
-    font-family: var(--font-heading);
+    font-family: var(--font-acumin);
     font-weight: 600;
     color: var(--color-main);
   }
@@ -58,12 +60,10 @@
  
 }
 
-/* @theme {
-  --font-agenda: "agenda", sans-serif;
-} */
 
- @theme {
+
+ /* @theme {
   --font-agenda: "agenda-one", sans-serif;
   --font-agenda-condensed: "agenda-one-condensed", sans-serif;
    --font-acumin: "acumin-pro", sans-serif;
-}
+} */
