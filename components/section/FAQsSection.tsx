@@ -2,9 +2,9 @@ import React from 'react'
 
 const FAQsSection = () => {
   return (
-    <div>
-      FAQsSection
-    </div>
+    <section> className=''
+
+    </section>
   )
 }
 

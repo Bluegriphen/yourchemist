@@ -38,7 +38,7 @@ const BlogCard = () => {
             <Link href="#" className='text-primary font-[600]text-[16px] gap-1 flex'>Read More
             
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 12L20 12M14 6L20 12L14 18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#70B916"/>
+<path d="M4 12L20 12M14 6L20 12L14 18" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="#70B916"/>
 </svg>
 </Link>
         </div>
