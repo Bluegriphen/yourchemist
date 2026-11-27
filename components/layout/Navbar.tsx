@@ -7,6 +7,7 @@ import Logo from "@/public/Logo.svg";
 import ChevronDown from '../icons/ChevronDown';
 import Search from '../icons/Search';
 import ShoppingCart from '../icons/ShoppingCart';
+import Button from '../ui/Button';
 
 const navItems = [
   {
@@ -36,7 +37,7 @@ const Navbar = () => {
   const [openDropDown, setOpenDropDown] = useState<string | null>(null); 
   return (
     <header className='sticky top-4 sm:px-6 lg"px-8'>
-      <nav className='mx-auto flex justify-between py-3 px-6 rounded-[30px] shadow-[0px_0.48px_9.97px_0px_#FAAE4303,0px_1.09px_22.64px_0px_#FAAE4304,0px_1.89px_39.41px_0px_#FAAE4305,0px_3.01px_62.61px_0px_#FAAE4306,0px_4.64px_96.6px_0px_#FAAE4307,0px_7.24px_150.74px_0px_#FAAE4308,0px_12.01px_250px_0px_#FAAE430D,0px_24px_250px_0px_#FAAE430D] mb-300 items-center'>
+      <nav className='mx-auto flex justify-between py-3 px-6 rounded-[30px] shadow-[0px_0.48px_9.97px_0px_#FAAE4303,0px_1.09px_22.64px_0px_#FAAE4304,0px_1.89px_39.41px_0px_#FAAE4305,0px_3.01px_62.61px_0px_#FAAE4306,0px_4.64px_96.6px_0px_#FAAE4307,0px_7.24px_150.74px_0px_#FAAE4308,0px_12.01px_250px_0px_#FAAE430D,0px_24px_250px_0px_#FAAE430D]  items-center'>
 
         {/* logo  */}
         <Link href="#">
@@ -98,9 +99,7 @@ const Navbar = () => {
         <div className="flex gap-3 items-center">
           <span className=' rounded-[100vw] h-11 w-11 hover:bg-primary'><Search/></span>
           <span className=" rounded-[100vw] h-11 w-11 hover:bg-tibet"><ShoppingCart/></span>
-          <button className="bg-primary py-4 px-6 flex items-center gap-2.5 rounded-[100px]">
-            <span className='font-semibold font-agenda  text-[16px] text-white text-center'>Order Prescription</span>
-          </button>
+          <Button>Order Prescription</Button>
         </div>
       </nav>
     </header>
