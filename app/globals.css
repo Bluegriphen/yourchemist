@@ -51,6 +51,7 @@
   h1, h2, h3, h4 {
     font-family: var(--font-acumin);
     font-weight: 600;
+    font-size: 40px;
     color: var(--color-main);
   }
 }

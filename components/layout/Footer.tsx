@@ -12,6 +12,7 @@ import nhs from "../../public/images/nhs.svg";
 import ssl from "../../public/images/ssl.svg";
 import rp from "../../public/images/registered-pharmacy.svg";
 import Image from "next/image";
+import NewsLetterSection from "../section/NewsLetterSection";
 
 
 const legalLink = [
@@ -25,7 +26,10 @@ const legalLink = [
 
 const Footer = () => {
   return (
-    <footer className="flex w-full items-center justify-center bg-main">
+   <div>
+    <NewsLetterSection/>
+     <footer className="flex w-full  items-center justify-center bg-main">
+      
       <div className="container-page px-10 py-5 sm:py-8 lg:py-10 lg:px-15">
         <div className="flex flex-col gap-10 lg:gap-12">
           <div className="flex flex-col gap-10 xl:flex-row xl:gap-16">
@@ -195,6 +199,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+   </div>
   );
 };
 

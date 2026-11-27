@@ -1,12 +1,12 @@
 import React from 'react'
 import Button from '../ui/Button'
-import TreatmentCard from '../home/treatment/TreatmentCard'
+import NewsLetterIcon from '../icons/NewsLetterIcon'
 
 const NewsLetterSection = () => {
   return (
-    <section className='w-full px-5 py-12 sm:px-8 sm:py-16 lg:py-20 flex justify-center relative overflow-hidden'>
-      <div className='container-page flex justify-center relative'>
-        <div className='mx-auto w-full max-w-[822px] flex flex-col gap-6 sm:gap-8 lg:gap-11 justify-center'>
+    <section className='w-full  flex justify-center relative overflow-hidden'>
+      <div className='container-page flex flex-col gap-8 justify-center relative'>
+        <div className='mx-auto w-full max-w-[822px] flex flex-col gap-6 sm:gap-8 lg:gap-11 justify-center z-10'>
           <h2 className='text-2xl sm:text-[32px] lg:text-[40px] leading-tight font-semibold text-center'>
             Subscribe to Our Newsletter
           </h2>
@@ -31,7 +31,10 @@ const NewsLetterSection = () => {
         </div>
         
         
-        <span></span>
+        <span className="pointer-events-none inset-x-0 bottom-0 mx-auto w-[150%] max-w-[1053px] opacity-10 sm:w-[110%] lg:w-[1053px]">
+          <NewsLetterIcon/>
+        </span>
+       
       </div>
     </section>
   )
